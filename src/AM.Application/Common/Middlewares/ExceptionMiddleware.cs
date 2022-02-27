@@ -90,18 +90,19 @@ public class ExceptionMiddleware
             Title = "Invalid Request Exception",
             Type = nameof(ValidationException),
             Status = context.Response.StatusCode,
-            Detail = "Validation failed, please correct the errors listed in the [errors] property.",
-            Instance = context?.Request?.Path, Extensions = { {"errors" , new Dictionary<string, string>() }}
+            Detail = ConstantsAppMsgException.ValidationFailed,
+            Instance = context?.Request?.Path, Extensions = { {ConstantsAppMsgException.Errors , new Dictionary<string, string>() }}
         };
         foreach (var error in exception.Errors)
         {
-            var errorsDictionary = (Dictionary<string, string>)problemDetails.Extensions["errors"];
+            var errorsDictionary = (Dictionary<string, string>)problemDetails.Extensions[ConstantsAppMsgException.Errors];
             if (!errorsDictionary.ContainsKey(error.PropertyName))
             {
                 errorsDictionary.Add(error.PropertyName, error.ErrorMessage);
             }
         }
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails)); 
+
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
     
     private async Task HandleUndefinedException(HttpContext context, Exception? exception)
@@ -109,13 +110,13 @@ public class ExceptionMiddleware
         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
         var problemDetails = new ProblemDetails
         {
-            Title = "Internal Server Error",
-            Type = "Undefined Exception",
+            Title = ConstantsAppMsgException.InternalServerError,
+            Type = ConstantsAppMsgException.UndefinedException,
             Status = context.Response.StatusCode,
-            Detail = "Internal server error.",
+            Detail = ConstantsAppMsgException.InternalServerError,
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails)); 
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
 
     private async Task HandleInvalidRequestException(HttpContext context, InvalidRequestException exception)
@@ -123,13 +124,13 @@ public class ExceptionMiddleware
         context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
         var problemDetails = new ProblemDetails
         {
-            Title = "Invalid Request Exception",
+            Title = ConstantsAppMsgException.InvalidRequestException,
             Type = nameof(InvalidRequestException),
             Status = context.Response.StatusCode,
             Detail = exception.Message,
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails)); 
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
 
 
@@ -138,13 +139,13 @@ public class ExceptionMiddleware
         context.Response.StatusCode = (int) HttpStatusCode.BadRequest;
         var problemDetails = new ProblemDetails
         {
-            Title = "Invalid file content exception",
+            Title = ConstantsAppMsgException.InvalidFileContentException,
             Type = nameof(HttpStatusCode.BadRequest),
             Status = context.Response.StatusCode,
             Detail = exception.Message,
             Instance = context?.Request?.Path
         };
-         await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
     
     private async Task HandleMowerInvalidInstructionException(HttpContext context, MowerInvalidInstructionException exception)
@@ -152,13 +153,13 @@ public class ExceptionMiddleware
         context.Response.StatusCode = (int) HttpStatusCode.BadRequest;
         var problemDetails = new ProblemDetails
         {
-            Title = "Invalid file content exception",
+            Title = ConstantsAppMsgException.InvalidFileContentException,
             Type = nameof(HttpStatusCode.BadRequest),
             Status = context.Response.StatusCode,
             Detail = exception.Message,
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
     
     private async Task HandleInvalidFileContentException(HttpContext context, InvalidFileContentException exception)
@@ -166,13 +167,13 @@ public class ExceptionMiddleware
         context.Response.StatusCode = (int) HttpStatusCode.BadRequest;
         var problemDetails = new ProblemDetails
         {
-            Title = "Invalid file content exception",
+            Title = ConstantsAppMsgException.InvalidFileContentException,
             Type = nameof(HttpStatusCode.BadRequest),
             Status = context.Response.StatusCode,
             Detail = exception.Message,
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
     
         
@@ -187,7 +188,7 @@ public class ExceptionMiddleware
             Detail = exception.Message,
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
 
     private async Task HandleMowerArgumentException(HttpContext context, MowerArgumentException exception)
@@ -195,13 +196,13 @@ public class ExceptionMiddleware
         context.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
         var problemDetails = new ProblemDetails
         {
-            Title = "InternalServerError",
+            Title =ConstantsAppMsgException.InternalServerError,
             Type = nameof(MowerArgumentException),
             Status = context.Response.StatusCode,
             Detail = "Error occurred during initialization of the mower.",
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
 
     private async Task HandleLawnInvalidCommandsCountException(HttpContext context, LawnInvalidCommandsCountException exception)
@@ -215,7 +216,7 @@ public class ExceptionMiddleware
             Detail = "Error occurred during initialization of the mower. Please check the contents of the file.",
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
 
     private async Task HandleLawnArgumentException(HttpContext context, LawnArgumentException exception)
@@ -224,13 +225,13 @@ public class ExceptionMiddleware
         context.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
         var problemDetails = new ProblemDetails
         {
-            Title = "InternalServerError",
+            Title = ConstantsAppMsgException.InvalidFileContentException,
             Type = nameof(LawnArgumentException),
             Status = context.Response.StatusCode,
             Detail = "Error occurred during initialization of the lawn.",
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
     
     private async Task HandleLawInvalidDimensionsException(HttpContext context, LawInvalidDimensionsException exception)
@@ -244,7 +245,7 @@ public class ExceptionMiddleware
             Detail = exception.Message,
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
 
     private async Task HandleLawnEmptyCommandsException(HttpContext context, LawnEmptyCommandsException exception)
@@ -258,7 +259,7 @@ public class ExceptionMiddleware
             Detail = "The file must contain at least the configuration of one mower.",
             Instance = context?.Request?.Path
         };
-        await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
+        if (context != null) await context.Response.Body.WriteAsync(ProblemDetailsAsByte(problemDetails));
     }
 
     private static byte[] ProblemDetailsAsByte(ProblemDetails problemDetails)
