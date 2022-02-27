@@ -15,7 +15,7 @@
 |[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|
 |[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|
 |[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|
-|[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)||
+
 
 ## Project description
 The company X wants to develop an automower for square surfaces.
