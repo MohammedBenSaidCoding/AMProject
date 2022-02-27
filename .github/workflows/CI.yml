@@ -62,12 +62,12 @@ jobs:
           dotnet test --collect:"XPlat Code Coverage"
           dotnet test build --verbosity normal --collect:"Code Coverage"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
-    - uses: mr-smithers-excellent/docker-build-push@v5
+    - uses: mr-smithers-excellent/docker-build-push@v4
       name: Build & push Docker image
       with:
         image: medbensaidcoding/am_project
         tags: v1, latest
+        dockerfile: ./src/AM.Api/Dockerfile
         registry: docker.io
-        dockerfile: Dockerfile.ci
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
