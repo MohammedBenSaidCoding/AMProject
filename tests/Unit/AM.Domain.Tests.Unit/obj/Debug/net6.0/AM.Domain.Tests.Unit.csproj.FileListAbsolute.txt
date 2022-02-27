@@ -235,6 +235,11 @@
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/bin/Debug/net6.0/stryker-config.json
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/bin/Debug/net6.0/AM.Domain.Tests.Unit.deps.json
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/bin/Debug/net6.0/AM.Domain.Tests.Unit.runtimeconfig.json
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.AssemblyInfoInputs.cache
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.AssemblyInfo.cs
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.csproj.CopyComplete
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.genruntimeconfig.cache
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/bin/Debug/net6.0/AM.Domain.Tests.Unit.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/bin/Debug/net6.0/ref/AM.Domain.Tests.Unit.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/bin/Debug/net6.0/AM.Domain.Tests.Unit.pdb
@@ -333,12 +338,7 @@
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/bin/Debug/net6.0/AM.Domain.Shared.pdb
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/bin/Debug/net6.0/AM.Domain.pdb
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.csproj.AssemblyReference.cache
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.GeneratedMSBuildEditorConfig.editorconfig
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.AssemblyInfoInputs.cache
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.AssemblyInfo.cs
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.csproj.CoreCompileInputs.cache
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.csproj.CopyComplete
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/ref/AM.Domain.Tests.Unit.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.pdb
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Domain.Tests.Unit/obj/Debug/net6.0/AM.Domain.Tests.Unit.genruntimeconfig.cache
