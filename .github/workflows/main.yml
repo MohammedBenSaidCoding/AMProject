@@ -7,33 +7,18 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
     
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
-      -
-        name: Checkout 
-        uses: actions/checkout@v2
-      -
-        name: Login to Docker Hub
-        uses: docker/login-action@v1
+      - uses: mr-smithers-excellent/docker-build-push@v4
+        name: Build & push Docker image
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          image: medbensaidcoding/am_project
+          tags: v1, latest
+          dockerfile: ./src/AM.Api/Dockerfile
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-      -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-      -
-        name: Build and push
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: ./src/AM.Api/Dockerfile
-          push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/am_project:latest
-
-
