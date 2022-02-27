@@ -23,7 +23,7 @@ The mower can be programmed to go throughout the whole surface. Mower's
 position is represented by coordinates (X,Y) and a characters indicate the orientation
 according to cardinal notations (N,E,W,S). The lawn is divided in grid to simplify
 navigation.
- 
+
 For example, the position can be 0,0,N, meaning the mower is in the lower left of the
 lawn, and oriented to the north.
 To control the mower, we send a simple sequence of characters. Possibles
@@ -44,14 +44,14 @@ Instructions are characters without spaces.
 Each mower move sequentially, meaning that the second mower moves only when
 the first has fully performed its series of instructions.
 When a mower has finished, it give the final position and orientation.
- 
+
 ## Technical section:
 -  Programming language : C# 10
 -  Framework : .NET 6
 -  Version control : Github
 -  Deployment: Github actions
- 
- 
+
+
 ###
 ## Architectural diagrams:
 ### DDD
@@ -60,42 +60,45 @@ When a mower has finished, it give the final position and orientation.
 ![N|Solid](https://i.postimg.cc/bdffjpbX/DEM-Sch-mas-techniques-Frame-6.jpg)
 ### MediatR Pipeline
 ![N|Solid](https://i.postimg.cc/13P4GZdY/DEM-Sch-mas-techniques-Frame-7.jpg)
- 
+
 ## Libraries
- 
+
 In this project I used the following libraries
- 
+
 | Library | README |
 | ------ | ------ |
 | AutoFixture | [AutoFixture][AutoFixture] |
 | MediatR | [MediatR][MediatR] |
 | Serilog | [Serilog][Serilog] |
 | Fluent Assertions | [Fluent Assertions][fluentassertions] |
- 
- 
+
+## API
+The API takes two parameters:
+- File: the file that contains the instructions. it is mandatory and it must be of type "txt"
+- IncludeMovementHistory: this property allows you to see the history of movements for each mower, by default it is disabled "False".
 ## License
- 
+
 MIT
- 
+
 **Mohammed BEN SAID**
- 
+
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
- 
-   [dill]: https://github.com/joemccann/dillinger
-  [git-repo-url]: https://github.com/joemccann/dillinger.git
-   [john gruber]: http://daringfireball.net
-   [df1]: http://daringfireball.net/projects/markdown/
-   [markdown-it]: https://github.com/markdown-it/markdown-it
-   [Ace Editor]: http://ace.ajax.org
-   [node.js]: http://nodejs.org
-   [Twitter Bootstrap]: http://twitter.github.com/bootstrap/
-   [jQuery]: http://jquery.com
-   [@tjholowaychuk]: http://twitter.com/tjholowaychuk
-   [express]: http://expressjs.com
-   [AngularJS]: http://angularjs.org
-   [Gulp]: http://gulpjs.com
- 
-   [AutoFixture]: https://github.com/AutoFixture/AutoFixture
-   [MediatR]: https://github.com/jbogard/MediatR/blob/master/README.md
-   [Serilog]: https://github.com/serilog/serilog/blob/dev/README.md
-   [fluentassertions]: https://github.com/fluentassertions/fluentassertions
+
+[dill]: https://github.com/joemccann/dillinger
+[git-repo-url]: https://github.com/joemccann/dillinger.git
+[john gruber]: http://daringfireball.net
+[df1]: http://daringfireball.net/projects/markdown/
+[markdown-it]: https://github.com/markdown-it/markdown-it
+[Ace Editor]: http://ace.ajax.org
+[node.js]: http://nodejs.org
+[Twitter Bootstrap]: http://twitter.github.com/bootstrap/
+[jQuery]: http://jquery.com
+[@tjholowaychuk]: http://twitter.com/tjholowaychuk
+[express]: http://expressjs.com
+[AngularJS]: http://angularjs.org
+[Gulp]: http://gulpjs.com
+
+[AutoFixture]: https://github.com/AutoFixture/AutoFixture
+[MediatR]: https://github.com/jbogard/MediatR/blob/master/README.md
+[Serilog]: https://github.com/serilog/serilog/blob/dev/README.md
+[fluentassertions]: https://github.com/fluentassertions/fluentassertions
