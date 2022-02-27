@@ -1,12 +1,22 @@
 # Automower Project
 #### Med B.S
 
-| Library | README |
+## Stryker
+| Project | Score |
 | ------ | ------ |
 | Application |  [![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FMohammedBenSaidCoding%2FAMProject%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/MohammedBenSaidCoding/AMProject/main?module=application-layer ) |
 | Domain |  [![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FMohammedBenSaidCoding%2FAMProject%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/MohammedBenSaidCoding/AMProject/main?module=domain-layer ) |
 | Api | [![Mutation testing badge](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2FMohammedBenSaidCoding%2FAMProject%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/MohammedBenSaidCoding/AMProject/main?module=api-layer )|  
-    
+
+## Sonar
+|  |  |
+| ------ | ------ |
+|[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=bugs)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|
+|[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|
+|[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|
+|[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)|
+|[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MohammedBenSaidCoding_AMProject&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MohammedBenSaidCoding_AMProject)||
+
 ## Project description
 The company X wants to develop an automower for square surfaces.
 The mower can be programmed to go throughout the whole surface. Mower's
