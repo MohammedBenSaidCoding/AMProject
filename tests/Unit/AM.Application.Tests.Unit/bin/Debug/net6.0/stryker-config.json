@@ -1,7 +1,7 @@
 {
   "stryker-config":
   {
-    "project-info": { "name": "github.com/MedBenSaidCoding/Mowerautomatic","module": "stryker-core", "version": "main"  },
+    "project-info": { "name": "github.com/MohammedBenSaidCoding/AMProject","module": "application-layer", "version": "main"  },
     "project": "AM.Application.csproj"
   }
 }

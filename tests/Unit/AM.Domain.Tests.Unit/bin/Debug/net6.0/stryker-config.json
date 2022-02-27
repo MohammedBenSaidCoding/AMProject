@@ -1,8 +1,7 @@
 {
   "stryker-config":
   {
-    //"dashboard-api-key":"0459a0f3-4cbf-4457-ac1f-a83f9b282f11",
-    "project-info": { "name": "github.com/MedBenSaidCoding/Mowerautomatic","module": "stryker-core", "version": "main"  },
+    "project-info": { "name": "github.com/MohammedBenSaidCoding/AMProject","module": "domain-layer", "version": "main"  },
     "project": "AM.Domain.csproj"
   }
 }

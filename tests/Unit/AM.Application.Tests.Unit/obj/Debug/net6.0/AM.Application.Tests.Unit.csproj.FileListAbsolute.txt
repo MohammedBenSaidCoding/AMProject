@@ -403,6 +403,11 @@
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/stryker-config.json
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/AM.Application.Tests.Unit.deps.json
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/AM.Application.Tests.Unit.runtimeconfig.json
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.AssemblyInfoInputs.cache
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.AssemblyInfo.cs
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.csproj.CopyComplete
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.genruntimeconfig.cache
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/AM.Application.Tests.Unit.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/ref/AM.Application.Tests.Unit.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/AM.Application.Tests.Unit.pdb
@@ -417,6 +422,7 @@
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/FluentAssertions.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/FluentValidation.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/log4net.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/MediatR.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/MediatR.Contracts.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
@@ -577,13 +583,7 @@
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/AM.Domain.pdb
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/AM.Domain.Shared.pdb
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.csproj.AssemblyReference.cache
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.GeneratedMSBuildEditorConfig.editorconfig
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.AssemblyInfoInputs.cache
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.AssemblyInfo.cs
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.csproj.CoreCompileInputs.cache
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.csproj.CopyComplete
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/ref/AM.Application.Tests.Unit.dll
 /Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.pdb
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/obj/Debug/net6.0/AM.Application.Tests.Unit.genruntimeconfig.cache
-/Users/mohammed/RiderProjects/AMProject/tests/Unit/AM.Application.Tests.Unit/bin/Debug/net6.0/log4net.dll

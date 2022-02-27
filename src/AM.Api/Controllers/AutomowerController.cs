@@ -23,6 +23,7 @@ public class AutomowerController : ControllerBase
     /// <param name="command">Start Operation Command</param>
     /// <returns>OperationSummaryDto</returns>
     /// <remarks>
+    /// The file is required.
     /// Example of valid file content
     /// 
     /// 5 5

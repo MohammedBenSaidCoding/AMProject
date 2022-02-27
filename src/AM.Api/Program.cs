@@ -51,18 +51,17 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "Automower API",
-        Description = "An ASP.NET Core Web API for Automower",
-        TermsOfService = new Uri("https://example.com/terms"),
+        Title = "Auto Mower API",
+        Description = "An ASP.NET Core Web API for Auto mower",
         Contact = new OpenApiContact
         {
             Name = "Github project",
-            Url = new Uri("https://example.com/contact")
+            Url = new Uri("https://github.com/MohammedBenSaidCoding/AMProject")
         },
         License = new OpenApiLicense
         {
-            Name = "Example License",
-            Url = new Uri("https://example.com/license")
+            Name = "README",
+            Url = new Uri("https://github.com/MohammedBenSaidCoding/AMProject/blob/main/README.md")
         }
     });
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

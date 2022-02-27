@@ -1,7 +1,7 @@
 {
   "stryker-config":
   {
-    "project-info": { "name": "github.com/MohammedBenSaidCoding/AMProject","module": "stryker-core", "version": "main"  },
+    "project-info": { "name": "github.com/MohammedBenSaidCoding/AMProject","module": "domain-layer", "version": "main"  },
     "project": "AM.Domain.csproj"
   }
 }
