@@ -67,6 +67,6 @@ jobs:
       with:
         image: medbensaidcoding/am_project
         tags: v1, latest
-        registry: docker.io
+        registry: https://hub.docker.com/repository/docker
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
