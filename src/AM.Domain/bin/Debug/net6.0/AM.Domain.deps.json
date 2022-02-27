@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AM.Domain/1.0.0": {
+        "dependencies": {
+          "AM.Domain.Shared": "1.0.0",
+          "Ardalis.SmartEnum": "2.0.1"
+        },
+        "runtime": {
+          "AM.Domain.dll": {}
+        }
+      },
+      "Ardalis.SmartEnum/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Ardalis.SmartEnum.dll": {
+            "assemblyVersion": "1.0.8.0",
+            "fileVersion": "1.0.8.0"
+          }
+        }
+      },
+      "AM.Domain.Shared/1.0.0": {
+        "runtime": {
+          "AM.Domain.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AM.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ardalis.SmartEnum/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tukxECzQuEXRGUzalYGF90CrD0hqW+308J3IaDKUoIavF3npUGVGn2ptumDSMIdZWInjPTlk3eJrrZuAePQbYA==",
+      "path": "ardalis.smartenum/2.0.1",
+      "hashPath": "ardalis.smartenum.2.0.1.nupkg.sha512"
+    },
+    "AM.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

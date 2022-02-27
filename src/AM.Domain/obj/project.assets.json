@@ -1,0 +1,122 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Ardalis.SmartEnum/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Ardalis.SmartEnum.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ardalis.SmartEnum.dll": {}
+        }
+      },
+      "AM.Domain.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AM.Domain.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AM.Domain.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ardalis.SmartEnum/2.0.1": {
+      "sha512": "tukxECzQuEXRGUzalYGF90CrD0hqW+308J3IaDKUoIavF3npUGVGn2ptumDSMIdZWInjPTlk3eJrrZuAePQbYA==",
+      "type": "package",
+      "path": "ardalis.smartenum/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.smartenum.2.0.1.nupkg.sha512",
+        "ardalis.smartenum.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Ardalis.SmartEnum.dll",
+        "lib/netstandard2.0/Ardalis.SmartEnum.xml"
+      ]
+    },
+    "AM.Domain.Shared/1.0.0": {
+      "type": "project",
+      "path": "../AM.Domain.Shared/AM.Domain.Shared.csproj",
+      "msbuildProject": "../AM.Domain.Shared/AM.Domain.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "AM.Domain.Shared >= 1.0.0",
+      "Ardalis.SmartEnum >= 2.0.1"
+    ]
+  },
+  "packageFolders": {
+    "/Users/mohammed/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/mohammed/RiderProjects/AMProject/src/AM.Domain/AM.Domain.csproj",
+      "projectName": "AM.Domain",
+      "projectPath": "/Users/mohammed/RiderProjects/AMProject/src/AM.Domain/AM.Domain.csproj",
+      "packagesPath": "/Users/mohammed/.nuget/packages/",
+      "outputPath": "/Users/mohammed/RiderProjects/AMProject/src/AM.Domain/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/mohammed/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/Users/mohammed/RiderProjects/AMProject/src/AM.Domain.Shared/AM.Domain.Shared.csproj": {
+              "projectPath": "/Users/mohammed/RiderProjects/AMProject/src/AM.Domain.Shared/AM.Domain.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Ardalis.SmartEnum": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

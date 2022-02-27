@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AM.Api</name>
+    </assembly>
+    <members>
+        <member name="M:AM.Api.Controllers.AutomowerController.StartAsync(AM.Application.AutomowerFeature.Commands.StartOperationCommand.StartOperationCommand)">
+            <summary>
+            Init lawn and run mowers
+            </summary>
+            <param name="command">Start Operation Command</param>
+            <returns>OperationSummaryDto</returns>
+            <remarks>
+            Example of valid file content
+            
+            5 5
+            
+            2 3 N
+            
+            FFRFFRLF
+            
+            </remarks>
+            <response code="200">Returns the operation summary.</response>
+            <response code="400">If the file is null or the file content is invalid.</response>
+        </member>
+    </members>
+</doc>

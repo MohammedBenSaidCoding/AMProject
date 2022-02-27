@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qrr5eAtEh5N3kozh/8nL7KV2gQ2qipYRdqspeOTX03FouL5Zqe7FxaM+z/LOBLTRNHnnJ8imLDm4MKOY58lWOw==",
+  "success": true,
+  "projectFilePath": "/Users/mohammed/RiderProjects/AMProject/src/AM.Domain/AM.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/mohammed/.nuget/packages/ardalis.smartenum/2.0.1/ardalis.smartenum.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
