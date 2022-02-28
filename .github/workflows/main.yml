@@ -28,7 +28,7 @@ jobs:
       with:
           image: medbensaidcoding/am_project
           tags: v1, latest
-          dockerfile: ./src/AM.Api/Dockerfile
+          dockerfile: Dockerfile
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
