@@ -76,6 +76,16 @@ In this project I used the following libraries
 The API takes two parameters:
 - File: the file that contains the instructions. it is mandatory and it must be of type "txt"
 - IncludeMovementHistory: this property allows you to see the history of movements for each mower, by default it is disabled "False".
+
+## Docker
+
+![N|Solid](https://i.ibb.co/KqbxH0d/My-First-Board-Frame-1.jpg)
+
+[Docker repository project][DockerRepository] 
+
+```sh
+docker push medbensaidcoding/am_project:tagname
+```
 ## License
 
 MIT
@@ -102,3 +112,5 @@ MIT
 [MediatR]: https://github.com/jbogard/MediatR/blob/master/README.md
 [Serilog]: https://github.com/serilog/serilog/blob/dev/README.md
 [fluentassertions]: https://github.com/fluentassertions/fluentassertions
+
+[dockerRepository]: https://hub.docker.com/r/medbensaidcoding/am_project
